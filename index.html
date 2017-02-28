@@ -2,14 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Edlib</title>
   </head>
+
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+      <div>
+          <form id="align-form">
+              <input id="query" placeholder="e.g. telephone"><br>
+              <input id="target" placeholder="e.g. elephant"><br>
+              <button type="submit">Align</button>
+          </form>
+
+          <div>
+              <div>Edit distance: <span id="ed-value"></span></div>
+              <div>Locations: <span id="loc-value"></span></div>
+              <div>Similarity: <span id="similarity-value"></span></div>
+          </div>
+      </div>
   </body>
 
   <script>
